@@ -1,5 +1,5 @@
 # chessman
-It is Mini-game. Wich represents chess logic
+It is Mini-game. Wich represents chess logi
 
 ![](https://github.com/Ver33d/chessman/blob/main/photo/1.PNG)
 
