@@ -1,0 +1,24 @@
+#ifndef CHESSLIB 
+#define CHESSLIB 
+#include "chessman.h" 
+ 
+ 
+class Knight : virtual public Figure {  
+public: 
+Knight(char* p) : Figure(p) {};  
+ Knight() {};   
+char isa() { return 'K'; };  
+ int attack(char*); }; 
+ 
+class Bishop : virtual public Figure { 
+ public:   Bishop(char* p) : Figure(p) {};  
+ Bishop() {};   
+char isa() { return 'B'; };  
+ int attack(char*); }; 
+ 
+class Prince : public Knight, public Bishop {  
+public:   Prince(char* p) : Figure(p) {}; 
+  Prince() {};  
+ char isa() { return 'P'; };  
+ int attack(char*); }; 
+#endif
