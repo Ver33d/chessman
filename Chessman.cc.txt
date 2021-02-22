@@ -30,10 +30,13 @@ return out <<f.isa() << f.pos[0] <<f.pos[1];
 } 
  
 std::istream& operator>>(std::istream& in, Figure& f) { 
- char s[2];  std::cin.unsetf(std::ios::skipws);  in >>s[0] >> s[1]; 
+ char s[2];  std::cin.unsetf(std::ios::skipws);  
+in >>s[0] >> s[1]; 
  in.ignore(64, '\n');  
 if((f.attack(s) == 0) || (f == s)) //if(f.deskout(s))  
-in.clear(std::ios::failbit | in.rdstate());  f = s;  return in;
+in.clear(std::ios::failbit | in.rdstate());  
+f = s;  
+return in;
  } 
  
 int Figure::danger() { 
@@ -48,12 +51,12 @@ cout << i << ' ';
  s[1] = '0' + i;    
  for(j=0; j < 8; j++)     
  {     
- s[0] = 'a' + j;    
+  s[0] = 'a' + j;    
   m = (*this != s) ? mark[attack(s)] : isa(); // attack ?     
- cout << m << ' ';      
-}    
+  cout << m << ' ';      
+ }    
 cout << i <<"\n";  
-  }   
+}   
 cout << "  a b c d e f g h\n"; 
  return(0); 
 } 
