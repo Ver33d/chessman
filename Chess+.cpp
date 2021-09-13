@@ -9,13 +9,11 @@ int main(int argc, char* argv[]) {
    std::cout << " to " << (argv[1]=(char*)"a1")<<" Default"<<endl;   
    std::cout << "Usage example: chess+ e5<<endl"; 
 } 
-
 Prince f(argv[1]);   
 do {  
    f.danger();  
    std::cout << f << '-' << f.isa();// f.isa возвращает букву  
    } 
-   
 while (std::cin >> f); 
    return(0); 
 } 
