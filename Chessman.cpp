@@ -46,7 +46,7 @@ std::istream& operator>>(std::istream& in, Figure& f) {
 int Figure::danger() { 
 	int i, j;  
 	char s[2];   
-	char* mark =(char*)".+x"; 		   // mark[0]='.' mark[1]='+' mark[2]='x' 
+	char* mark =(char*)".+x";	// mark[0]='.' mark[1]='+' mark[2]='x' 
 	char m; 
 	cout <<"  a b c d e f g h\n";  
 	for(i=8; i > 0; i--)    
