@@ -20,7 +20,7 @@ int Bishop::attack(char* p) {
  int x = p[0] - pos[0];//p[0]- po doske ; posithion-hde stoezh  
  int y = p[1] - pos[1];// вычитание делается для того, чтобы понять куда будем смещать  
 	if(x < 0)    
-		x = -x;    //так берем по модулю 
+		x = -x;    	   //так берем по модулю 
 	if(y < 0)     
 		y = -y;  
 	if( x != y)  
